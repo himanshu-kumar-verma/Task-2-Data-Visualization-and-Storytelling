@@ -11,21 +11,16 @@ Creating visualizations that convey a compelling story from superstore sales dat
 
 # 📂 Project Files Included:
 
-- superstore_cleaned_dataset.xlsx — final cleaned dataset used for Power BI
+- superstore_final_dataset.xlsx — final cleaned dataset used for Power BI
 
 - Superstore_PowerBI.pbix — Power BI dashboard file
 
-Screenshot:
-
-- Overview dashboard
-
-- Sales trend
-
-- Category analysis
-
-- Map visuals
-
-- Customer segment visuals
+- Screenshot:
+  Overview dashboard
+  Sales trend
+  Category analysis
+  Map visuals
+  Customer segment visuals
 
 
 # 🧾 Project Overview: 
@@ -101,7 +96,7 @@ DateTable = CALENDAR(MIN('Orders'[Order_Date_Fixed]), MAX('Orders'[Order_Date_Fi
 
 # 📈 DAX Measures Created:
 
-- 🧮 Core Measures:
+  🧮 Core Measures:
 
 Total Sales = SUM(Orders[Sales])
 
@@ -109,11 +104,11 @@ Total Orders = DISTINCTCOUNT(Orders[Order_ID])
 
 Average Order Value = [Total Sales] / [Total Orders]
 
-- 📅 Time Intelligence:
+  📅 Time Intelligence:
 
 YOY Sales = CALCULATE([Total Sales], DATEADD('DateTable'[Date], -1, YEAR))
 
-- 🚚 Shipping Analysis:
+  🚚 Shipping Analysis:
 
 Average Shipping Days = AVERAGE(Orders[Shipping_Days])
 
@@ -175,7 +170,7 @@ Average Shipping Days = AVERAGE(Orders[Shipping_Days])
 
 # 🔍 Key Insights:
 
-- 📅 Trend Insights:
+  📅 Trend Insights:
 
   Strong YOY growth from 2015 → 2018
 
@@ -184,7 +179,7 @@ Average Shipping Days = AVERAGE(Orders[Shipping_Days])
   Lowest sales in Q1 each year
 
 
-- 🌎 Regional Insights: 
+  🌎 Regional Insights: 
 
   West region dominates sales
 
@@ -193,7 +188,7 @@ Average Shipping Days = AVERAGE(Orders[Shipping_Days])
   Central and South regions underperform
 
 
-- 🛍️ Category Insights:
+  🛍️ Category Insights:
 
   Technology yields highest revenue
 
@@ -202,7 +197,7 @@ Average Shipping Days = AVERAGE(Orders[Shipping_Days])
   Office Supplies highest order volume
 
 
-- 👤 Customer Segments:
+  👤 Customer Segments:
 
   Consumer segment largest contributor
 
@@ -211,7 +206,7 @@ Average Shipping Days = AVERAGE(Orders[Shipping_Days])
   Home Office segment shows lowest performance
 
 
-- 🚚 Shipping Insights:
+  🚚 Shipping Insights:
 
   Standard Class most commonly used
 
@@ -247,34 +242,4 @@ Average Shipping Days = AVERAGE(Orders[Shipping_Days])
   Price sensitivity in Furniture products
   
   Underutilization of Same Day shipping
-
-
-# 🛠️ Tools Used:
-
-- Power BI Desktop
-
-- Excel (cleaning + source file)
-
-- DAX (custom measures)
-
-- Power Query
-- Power BI Maps 
-
-
-# 🧩 Project Structure:
-
-superstore-powerbi-analysis/
-│
-├── data/
-│   ├── superstore_cleaned_dataset.xlsx
-│   └── superstore_raw_dataset.xlsx
-│
-├── report/
-│   └── Superstore_PowerBI.pbix
-│
-├── screenshots/
-│   ├── dashboard.png
-│ 
-│
-└── README.md
 
