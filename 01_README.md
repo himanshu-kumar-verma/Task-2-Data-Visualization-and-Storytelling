@@ -4,7 +4,7 @@ Creating visualizations that convey a compelling story from superstore sales dat
 
 # 📊 Superstore Sales Analysis — Power BI Dashboard Project
 
-- This repository contains a complete end-to-end Business Intelligence project using Microsoft Power BI.
+- This repository contains a complete end to end Business Intelligence project using Microsoft Power BI.
 
 - The goal is to analyze Superstore sales data, identify key insights, and develop a fully interactive dashboard for business decision making.
 
